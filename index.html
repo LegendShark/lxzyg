@@ -11,9 +11,9 @@
     <meta name="keywords" content="自游馆, 游泳馆, 健身, 游泳馆开店, 蓝新自游馆" />
     <meta name="description" content="自游馆, 游泳馆, 蓝新自游馆" />
     <title>Home</title>
-    <link href="/lxzyg/stylesheets/site-e2b07e3b.css" rel="stylesheet" />
+    <link href="/lxzyg/stylesheets/site-80d5135e.css" rel="stylesheet" />
       <link href="/lxzyg/stylesheets/swiper.min-c8305b71.css" rel="stylesheet" />
-  <link href="/lxzyg/stylesheets/index-7f833cc2.css" rel="stylesheet" />
+  <link href="/lxzyg/stylesheets/index-f737f2ec.css" rel="stylesheet" />
 
   </head>
   <body>
@@ -210,8 +210,8 @@
   </div>
 </div>
 
-<div id="contact" class="container padding d-flex flex-col align-items-center">
-  <div class="input-title my-5">蓝新自游馆现正火热招商中</div>
+<div id="contact" class="container padding d-flex flex-col align-items-center my-5">
+  <div class="input-title mb-3">蓝新自游馆现正火热招商中</div>
   <div class="d-flex flex-col padding">
     <input class="field mb-2" type="text" autocomplete="off" id="name" placeholder="请输入您的姓名">
     <input class="field mb-2" type="text" autocomplete="off" id="mobile" placeholder="请输入您的电话">
@@ -235,7 +235,7 @@
       </div>
     </div>
   </div>
-  <div class="btn my-3">立即提交</div>
+  <div class="btn mt-3">立即提交</div>
 </div>
 
       <div class="popups">
@@ -298,8 +298,11 @@
   <script>
     var swiper = new Swiper('.banners', {
       slidesPerView: 1,
-      spaceBetween: 5,
       loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
