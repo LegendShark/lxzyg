@@ -12,7 +12,7 @@
     <meta name="description" content="蓝新自游馆全新生意：新式游泳馆市场将成为下一个超级风口，行业规模呈上升趋势，市场潜力巨大，会员卡与培训预售制，让资金快速回笼；“互联网+”远程管理，实时查看数据、节省管理成本；总部提供泳池补贴，免费培训，开业指导、预售帮扶，智能运营，回本快" />
     <title>招商代理优势 - 蓝海市场 全国首创 免费培训 回本快 - 蓝新自游馆</title>
     <link rel="icon" type="image/png" sizes="16x16" href="/lxzyg/images/favicon-e2706848.png">
-    <link href="/lxzyg/stylesheets/site-3013f5c4.css" rel="stylesheet" />
+    <link href="/lxzyg/stylesheets/site-0d2abc3c.css" rel="stylesheet" />
       <link href="/lxzyg/stylesheets/partners-b1cee8f6.css" rel="stylesheet" />
 
   </head>
@@ -295,30 +295,42 @@
 
 <div id="contact" class="container padding d-flex flex-col align-items-center my-5">
   <div class="input-title mb-3">蓝新自游馆现正火热招商中</div>
-  <div class="d-flex flex-col padding">
-    <input class="field mb-2" type="text" autocomplete="off" id="name" placeholder="请输入您的姓名">
-    <input class="field mb-2" type="text" autocomplete="off" id="mobile" placeholder="请输入您的电话">
+  <div class="d-flex flex-row justify-content-between padding w-100 mb-2">
+    <div class="address">
+      <select id="c-province" class="w-100">
+        <option value="">请选择省份</option>
+      </select>
+    </div>
+    <div class="address">
+      <select id="c-city" class="w-100">
+        <option value="">请选择城市</option>
+      </select>
+    </div>
+  </div>
+  <div class="d-flex flex-col padding w-100">
+    <input id="c-name" class="field mb-2" type="text" autocomplete="off" placeholder="请输入您的姓名">
+    <input id="c-phone" class="field mb-2" type="text" autocomplete="off" placeholder="请输入您的电话">
     <div class="checkboxs-title mb-1">您想获取的资料</div>
     <div class="checkboxs d-flex flex-row justify-content-between">
-      <div class="d-flex flex-row align-items-center mr-2">
-        <input type="checkbox">
+      <div class="d-flex flex-row align-items-center">
+        <input id="c-check-1" type="checkbox">
         <lable class="ml-1">费用详情</lable>
       </div>
-      <div class="d-flex flex-row align-items-center mr-2">
-        <input type="checkbox">
+      <div class="d-flex flex-row align-items-center">
+        <input id="c-check-2" type="checkbox">
         <lable class="ml-1">投资政策</lable>
       </div>
-      <div class="d-flex flex-row align-items-center mr-2">
-        <input type="checkbox">
+      <div class="d-flex flex-row align-items-center">
+        <input id="c-check-3" type="checkbox">
         <lable class="ml-1">成本利润</lable>
       </div>
       <div class="d-flex flex-row align-items-center">
-        <input type="checkbox">
+        <input id="c-check-4" type="checkbox">
         <lable class="ml-1">最新优惠</lable>
       </div>
     </div>
   </div>
-  <div class="btn mt-3">立即提交</div>
+  <div id="c-submit" class="btn mt-3">立即提交</div>
 </div>
 
       <div class="popups">
@@ -376,7 +388,8 @@
         </div>
       </div>
     </div>
-    <script src="/lxzyg/javascripts/site-da39a3ee.js"></script>
+    <script src="/lxzyg/javascripts/axios.min-f24d0bcc.js"></script>
+    <script src="/lxzyg/javascripts/site-cdefde1a.js"></script>
       <script>
   </script>
 
