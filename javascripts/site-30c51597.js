@@ -116,10 +116,10 @@ function setMenu() {
 
   menu.addEventListener('click', e => {
     let headerNav = document.getElementById('header-nav')
-    if (headerNav.style.display === "none") {
-      headerNav.style.display = "grid";
-    } else {
+    if (headerNav.style.display === "grid") {
       headerNav.style.display = "none";
+    } else {
+      headerNav.style.display = "grid";
     }
   })
 }
