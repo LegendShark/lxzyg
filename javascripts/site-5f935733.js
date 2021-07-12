@@ -108,6 +108,23 @@ function setContactEvents() {
   })
 }
 
+function setMenu() {
+  let menu = document.getElementById('menu')
+  if (!menu) {
+    return
+  }
+
+  menu.addEventListener('click', e => {
+    let headerNav = document.getElementById('header-nav')
+    if (headerNav.style.display === "none") {
+      headerNav.style.display = "grid";
+    } else {
+      headerNav.style.display = "none";
+    }
+  })
+}
+
 window.onload = () => {
   setContactEvents()
+  setMenu()
 }
