@@ -111,23 +111,6 @@ function setContactEvents() {
   });
 }
 
-function setMenu() {
-  var menu = document.getElementById('menu');
-  if (!menu) {
-    return;
-  }
-
-  menu.addEventListener('click', function (e) {
-    var headerNav = document.getElementById('header-nav');
-    if (headerNav.style.display === "grid") {
-      headerNav.style.display = "none";
-    } else {
-      headerNav.style.display = "grid";
-    }
-  });
-}
-
 window.onload = function () {
   setContactEvents();
-  setMenu();
 };
