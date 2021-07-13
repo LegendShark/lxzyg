@@ -1,37 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.lxzyg.com/lxzyg/</loc>
+    <loc>http://ziyouswim.com/lxzyg/</loc>
     <lastmod>2021-07-13T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.lxzyg.com/lxzyg/test.html</loc>
+    <loc>http://ziyouswim.com/lxzyg/about.html</loc>
     <lastmod>2021-07-13T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.lxzyg.com/lxzyg/about.html</loc>
+    <loc>http://ziyouswim.com/lxzyg/cases.html</loc>
     <lastmod>2021-07-13T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.lxzyg.com/lxzyg/cases.html</loc>
+    <loc>http://ziyouswim.com/lxzyg/partners.html</loc>
     <lastmod>2021-07-13T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.lxzyg.com/lxzyg/partners.html</loc>
-    <lastmod>2021-07-13T00:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.lxzyg.com/lxzyg/products.html</loc>
+    <loc>http://ziyouswim.com/lxzyg/products.html</loc>
     <lastmod>2021-07-13T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
