@@ -126,10 +126,14 @@
 }
 
 .super-title2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+}
+
+.super-desc {
+  font-size: 1.2rem;
 }
 
 .super-info dt {
@@ -142,6 +146,15 @@
 }
 
 .super-info dd {
+  margin-left: 1rem;
+}
+
+.super-info ul {
+  list-style-type: disc;
+  padding-inline-start: 0;
+}
+
+.super-info li {
   margin-left: 1rem;
 }
 
@@ -352,7 +365,7 @@
         <div class="super-info">
           <span class="super-title1 text-nowrap">优势1</span>
           <div class="super-title2">全国首创，行业无竞争</div>
-          <div >游泳馆新模式，市场空白</div>
+          <div class="super-desc">游泳馆新模式，市场空白</div>
         </div>
       </div>
       <div class="super super-left">
@@ -360,7 +373,7 @@
         <div class="super-info">
           <span class="super-title1 text-nowrap">优势2</span>
           <div class="super-title2">成功模式授权，快速启动</div>
-          <div >不断探索并完善经营模式，可盈利易复制的单店模型，授权使用</div>
+          <div  class="super-desc">不断探索并完善经营模式，可盈利易复制的单店模型，授权使用</div>
         </div>
       </div>
       <div class="super super-right">
@@ -369,7 +382,7 @@
           <span class="super-title1 text-nowrap">优势3</span>
           <div class="super-title2">总部全程托管，一站式服务</div>
           <div>
-            <dl>
+            <dl class="super-desc">
               <dt>开业前保姆式服务：</dt>
               <dd>提供门店选址、场地勘察、收入预测、装修设计、筹备开业等服务，达到标准化、专业化开店</dd>
               <dt>开业后托管式管理：</dt>
@@ -385,7 +398,7 @@
         <div class="super-info">
           <span class="super-title1 text-nowrap">优势4</span>
           <div class="super-title2">专业团队运营</div>
-          <div>培养专业运营团队，选址、装修、招聘、引流、拓客、招生、运营管理全包，全心全意为合作商服务</div>
+          <div class="super-desc">培养专业运营团队，选址、装修、招聘、引流、拓客、招生、运营管理全包，全心全意为合作商服务</div>
         </div>
       </div>
       <div class="super super-right">
@@ -393,7 +406,7 @@
         <div class="super-info">
           <span class="super-title1 text-nowrap">优势5</span>
           <div class="super-title2">销售方式全配套，回本周期短</div>
-          <div>
+          <div class="super-desc">
             <ul>
               <li>会员预售制，资金回流快，回本速度快</li>
               <li>多元游泳项目营收，利润空间大</li>
@@ -443,43 +456,43 @@
 </div>
 
 <div id="contact" class="container padding d-flex flex-col align-items-center my-5">
-<div class="input-title mb-3">蓝新自游馆现正火热招商中</div>
-<div class="d-flex flex-row justify-content-between padding w-100 mb-2">
-  <div class="address">
-    <select id="c-province" class="w-100">
-      <option value="">请选择省份</option>
-    </select>
-  </div>
-  <div class="address">
-    <select id="c-city" class="w-100">
-      <option value="">请选择城市</option>
-    </select>
-  </div>
-</div>
-<div class="d-flex flex-col padding w-100">
-  <input id="c-name" class="field mb-2" type="text" autocomplete="off" placeholder="请输入您的姓名">
-  <input id="c-phone" class="field mb-2" type="text" autocomplete="off" placeholder="请输入您的电话">
-  <div class="checkboxs-title mb-1">您想获取的资料</div>
-  <div class="checkboxs d-flex flex-row flex-wrap justify-content-between">
-    <div class="d-flex flex-row align-items-center m-1">
-      <input id="c-check-1" type="checkbox">
-      <lable class="ml-1">费用详情</lable>
+  <div class="input-title mb-3">蓝新自游馆现正火热招商中</div>
+  <div class="d-flex flex-row justify-content-between padding w-100 mb-2">
+    <div class="address">
+      <select id="c-province" class="w-100">
+        <option value="">请选择省份</option>
+      </select>
     </div>
-    <div class="d-flex flex-row align-items-center m-1">
-      <input id="c-check-2" type="checkbox">
-      <lable class="ml-1">投资政策</lable>
-    </div>
-    <div class="d-flex flex-row align-items-center m-1">
-      <input id="c-check-3" type="checkbox">
-      <lable class="ml-1">成本利润</lable>
-    </div>
-    <div class="d-flex flex-row align-items-center m-1">
-      <input id="c-check-4" type="checkbox">
-      <lable class="ml-1">最新优惠</lable>
+    <div class="address">
+      <select id="c-city" class="w-100">
+        <option value="">请选择城市</option>
+      </select>
     </div>
   </div>
-</div>
-<div id="c-submit" class="btn mt-3">立即提交</div>
+  <div class="d-flex flex-col padding w-100">
+    <input id="c-name" class="field mb-2" type="text" autocomplete="off" placeholder="请输入您的姓名">
+    <input id="c-phone" class="field mb-2" type="text" autocomplete="off" placeholder="请输入您的电话">
+    <div class="checkboxs-title mb-1">您想获取的资料</div>
+    <div class="checkboxs d-flex flex-row flex-wrap justify-content-between">
+      <div class="d-flex flex-row align-items-center m-1">
+        <input id="c-check-1" type="checkbox">
+        <lable class="ml-1">费用详情</lable>
+      </div>
+      <div class="d-flex flex-row align-items-center m-1">
+        <input id="c-check-2" type="checkbox">
+        <lable class="ml-1">投资政策</lable>
+      </div>
+      <div class="d-flex flex-row align-items-center m-1">
+        <input id="c-check-3" type="checkbox">
+        <lable class="ml-1">成本利润</lable>
+      </div>
+      <div class="d-flex flex-row align-items-center m-1">
+        <input id="c-check-4" type="checkbox">
+        <lable class="ml-1">最新优惠</lable>
+      </div>
+    </div>
+  </div>
+  <div id="c-submit" class="btn mt-3">3秒即可查询招商方案</div>
 </div>
 
 
