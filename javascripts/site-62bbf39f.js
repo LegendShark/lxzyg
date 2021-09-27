@@ -1,27 +1,13 @@
 'use strict';
 
-var url = 'https://mp.ziyouswim.com/api/';
-
-function fetchProvince(okCallback, errCallback) {
-  axios.get(url + 'supplier/district').then(function (resp) {
-    if (resp.data.code > 200) {
-      if (errCallback) {
-        errCallback(res.data.message);
-      }
-    } else {
+function fetchDistrict(okCallback, errCallback) {
+  axios.get('https://ziyouswim.com/districts.json').then(function (resp) {
+    if (resp.data.status === "success") {
       okCallback(resp.data.data);
-    }
-  });
-}
-
-function fetchCity(provinceId, okCallBack, errCallback) {
-  axios.get(url + 'supplier/district/city?provinceId=' + provinceId).then(function (res) {
-    if (res.data.code > 200) {
+    } else {
       if (errCallback) {
         errCallback(res.data.message);
       }
-    } else {
-      okCallBack(res.data.data);
     }
   });
 }
@@ -34,13 +20,19 @@ function setContactEvents() {
 
   var province = document.getElementById('c-province');
   var city = document.getElementById('c-city');
-  fetchProvince(function (provinces) {
-    for (var i = 0; i < provinces.length; i++) {
-      province.options[i + 1] = new Option(provinces[i].fullname, provinces[i].id);
+  fetchDistrict((districts) => {
+    for (var i = 0; i < districts.length; i++) {
+      province.options[i + 1] = new Option(districts[i].fullname, districts[i].id);
     }
-  });
-  province.addEventListener('change', function (e) {
-    fetchCity(e.target.value, function (cities) {
+
+    province.addEventListener('change', (e) => {
+      var cities;
+      for (var i = 0; i < districts.length; i++) {
+        if (districts[i].id === e.target.value) {
+          cities = districts[i].children;
+          break;
+        }
+      }
       city.options.length = 1;
       for (var i = 0; i < cities.length; i++) {
         city.options[i + 1] = new Option(cities[i].fullname, cities[i].id);
